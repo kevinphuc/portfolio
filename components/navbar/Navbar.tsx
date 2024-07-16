@@ -23,10 +23,13 @@ const Navbar = () => {
 
     return (
         <div className={`fixed top-0 w-full z-10 ${
-        isScrolled ? 'bg-opacity-90 bg-white border-b-1 dark:bg-black border-lm scroll-smooth' : 'bg-opacity-10 bg-white dark:bg-opacity-0'
+        isScrolled ? 
+        'bg-opacity-90 dark:bg-opacity-90  bg-white border-b-1 dark:bg-black border-lm dark:border-dm scroll-smooth' : 
+        'bg-opacity-10 bg-white dark:bg-opacity-0'
       }`}>
-            <div className='flex justify-between items-center h-[60px] px-4'>
-                <ThemeSwitcher />
+            <div className='flex flex-row justify-between items-center h-[60px] px-4'>
+                <p className='font-bold dark:text-dm text-[22px] px-[132px]'>KevinPhuc</p>
+                <div className='px-[55px]'><ThemeSwitcher /></div>
             </div>
         </div>
     )

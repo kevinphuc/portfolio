@@ -6,7 +6,6 @@ const nextConfig: NextConfig = {
   distDir: 'dist',
   images: {
     domains: ['images.unsplash.com'],
-    unoptimized: true,
   },
   devIndicators: false,
 };
